@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+  <title>Cubaan</title>
+</head>
+<body>
+  <button id="cuba">Tekan Saya</button>
+  <button id="buang">Padam Semua</button>
+  <div id="hasil"></div>
+  
+<script src="js/zepto.min.js"></script>
+<script src="js/cubaan.js"></script>
+<script>
+  $('#cuba').click(function() {
+    CUBAAN.Buat($('#hasil'));
+  });
+  $('#buang').click(function() {
+    $('#hasil').html('');
+  });
+</script>
+</body>
+
+</html>
